@@ -32,8 +32,6 @@
         }
 
         return ($citifix->execute()) ? true : false;
-
-        $citifix = null;
     }
 
      /**
@@ -50,8 +48,6 @@
         $citifix->bindValue(':item', $item, PDO::PARAM_INT);
 
         return ($citifix->execute()) ? true : false;
-
-        $stmt = null;
     }
 
 
@@ -72,8 +68,6 @@
         $citifix->execute();
 
         return ($citifix->fetch()) ? true : false;
-
-        $stmt = null;
     }
      /**
       * GET ALL USER METHOD FROM A TABLE
@@ -90,7 +84,6 @@
 
         return ($citifix->fetchAll()) ? true : false;
 
-        $stmt = null;
     }
 
     /**
@@ -106,8 +99,6 @@
         $citifix->bindValue(':item', $item);
 
         return ($citifix->execute()) ? true : false;
-
-        $citifix = null;
     }
 
     /**
