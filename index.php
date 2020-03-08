@@ -31,6 +31,10 @@ $YOUR_VALIABLE_NAME = Citifix_Crud::validate($_POST['POST_VALUE'], FILTER_DEFAUL
     echo 'Data NOT posted';  
   }
 
+//  Other ways for checking 
+
+return ($citi_response) ? 'data poste' : 'data not posted';
+
 //   #########################################################################
   /**
    * IF USE NORMAL
